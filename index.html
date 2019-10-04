@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Stop-watch</title>
+      <link rel="stylesheet" href="./clock.css" />
+      <style type="text/css">body {background-color: black;}</style>
+    </head>
+    <body >
+      <!-- <h1>Stop Watch</h1> -->
+  
+      <div class="container">
+        <div class="stop__watch--card">
+          <h1 class="lg-heading">Stopwatch</h1>
+          <div class="timer">
+            <div class="show-time times">
+              <span id="minute">00</span>: <span id="seconds">00</span>:<span id="tens">00</span>
+            </div>
+          </div>
+          <ul id="lap-holder">
+     
+          </ul>
+  
+          <div class="button-group">
+            <button id="start-timer" onclick="Stopwatch_timer()">Start</button>
+            <button id="stop-timer" onclick="stop_timer()">Stop</button>
+            <button id="lap-timer" onclick="lap_timer()">Lap</button>
+            <button id="reset" onclick="reset_timer()">Reset</button>
+            <button id="history" onclick="history_lap()">History For Lap</button>
+          </div>
+         <h1 id="h1"> <center></center></h1>
+          <ul id="div"></ul>
+
+        </div>
+       
+  
+       </div>
+     
+  
+      <script src="./clock.js" defer></script>
+    </body>
+  </html>
